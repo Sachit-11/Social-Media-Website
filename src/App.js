@@ -15,7 +15,7 @@ import { AuthContext } from "./context/authContext";
 
 function App() {
 
-  const {currentUser} = useContext(AuthContext);
+  // const {currentUser} = useContext(AuthContext);
 
   const {darkMode} = useContext(DarkModeContext);
   
@@ -36,9 +36,9 @@ function App() {
 
   // Nested Content is passed to children prop only
   const ProtectedRoute = ({children}) => {
-    if (!currentUser){
-      return <Navigate to = "/login" />
-    }
+    // if (!currentUser){
+      // return <Navigate to = "/login" />
+    // }
 
     return children;
   }
